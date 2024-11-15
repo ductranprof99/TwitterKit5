@@ -36,9 +36,9 @@ FOUNDATION_EXTERN NSString *const TWTROAuthEchoAuthorizationHeaderKey;
  *  This is equivalent to calling `-URLRequestWithMethod:URL:parameters:error:` and getting the URL and the `Authorization` HTTP header out of the request.
  *
  *  @param method       Request method, GET, POST, PUT, DELETE, etc.
- *  @param URLString    The full URL of the Twitter endpoint you plan to send a request to. E.g. https://api.twitter.com/1.1/account/verify_credentials.json
+ *  @param URLString    The full URL of the Twitter endpoint you plan to send a request to. E.g. https://api.x.com/1.1/account/verify_credentials.json
  *  @param parameters   Request parameters.
- *  @param error        Error in the `TWTRErrorDomain` domain. The code will be `TWTRErrorCodeInvalidURL` if the `URLString`'s host is not api.twitter.com
+ *  @param error        Error in the `TWTRErrorDomain` domain. The code will be `TWTRErrorCodeInvalidURL` if the `URLString`'s host is not api.x.com
  *
  *  @return `nil` if there's an error or a missing required parameter, or a dictionary with the fully formed request URL under `TWTROAuthEchoRequestURLStringKey` (`NSString`), and the `Authorization` header in `TWTROAuthEchoAuthorizationHeaderKey` (`NSString`), to be used to sign the request.
  *

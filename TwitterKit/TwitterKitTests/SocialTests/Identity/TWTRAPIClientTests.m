@@ -562,7 +562,7 @@
     [self.tweetActionStub likeTweetWithID:@"1234"
                                completion:^(TWTRTweet *tweet, NSError *error){
                                }];
-    XCTAssertEqualObjects([self.tweetActionStub.sentRequest.URL absoluteString], @"https://api.twitter.com/1.1/favorites/create.json");
+    XCTAssertEqualObjects([self.tweetActionStub.sentRequest.URL absoluteString], @"https://api.x.com/1.1/favorites/create.json");
 }
 
 - (void)testLikeTweet_requestsProperID
@@ -587,7 +587,7 @@
     [self.tweetActionStub unlikeTweetWithID:@"1234"
                                  completion:^(TWTRTweet *tweet, NSError *error){
                                  }];
-    XCTAssertEqualObjects([self.tweetActionStub.sentRequest.URL absoluteString], @"https://api.twitter.com/1.1/favorites/destroy.json");
+    XCTAssertEqualObjects([self.tweetActionStub.sentRequest.URL absoluteString], @"https://api.x.com/1.1/favorites/destroy.json");
 }
 
 - (void)testUnlikeTweet_requestsProperID
@@ -636,7 +636,7 @@
     [self.tweetActionStub retweetTweetWithID:@"1234"
                                   completion:^(TWTRTweet *tweet, NSError *error){
                                   }];
-    XCTAssertEqualObjects([self.tweetActionStub.sentRequest.URL absoluteString], @"https://api.twitter.com/1.1/statuses/retweet/1234.json");
+    XCTAssertEqualObjects([self.tweetActionStub.sentRequest.URL absoluteString], @"https://api.x.com/1.1/statuses/retweet/1234.json");
 }
 
 - (void)testUnretweetTweet_requestsProperURL
@@ -644,7 +644,7 @@
     [self.tweetActionStub unretweetTweetWithID:@"1234"
                                     completion:^(TWTRTweet *tweet, NSError *error){
                                     }];
-    XCTAssertEqualObjects([self.tweetActionStub.sentRequest.URL absoluteString], @"https://api.twitter.com/1.1/statuses/unretweet/1234.json");
+    XCTAssertEqualObjects([self.tweetActionStub.sentRequest.URL absoluteString], @"https://api.x.com/1.1/statuses/unretweet/1234.json");
 }
 
 - (void)testRetweetTweet_returnsPerspectivalUser
@@ -723,7 +723,7 @@
     [self.clientStub sendTweetWithText:@"1234"
                             completion:^(TWTRTweet *tweet, NSError *error){
                             }];
-    XCTAssertEqualObjects([self.clientStub.sentRequest.URL absoluteString], @"https://api.twitter.com/1.1/statuses/update.json");
+    XCTAssertEqualObjects([self.clientStub.sentRequest.URL absoluteString], @"https://api.x.com/1.1/statuses/update.json");
 }
 
 - (void)testSendTweet_usesPOST
@@ -829,7 +829,7 @@
                                mediaID:@"fakeID"
                             completion:^(TWTRTweet *_Nullable tweet, NSError *_Nullable error){
                             }];
-    XCTAssertEqualObjects([self.clientStub.sentRequest.URL absoluteString], @"https://api.twitter.com/1.1/statuses/update.json");
+    XCTAssertEqualObjects([self.clientStub.sentRequest.URL absoluteString], @"https://api.x.com/1.1/statuses/update.json");
     XCTAssertEqualObjects(self.clientStub.sentRequest.HTTPMethod, @"POST");
     XCTAssertEqualObjects([self.clientStub sentHTTPBodyString], @"media_ids=fakeID&status=tweet");
 }

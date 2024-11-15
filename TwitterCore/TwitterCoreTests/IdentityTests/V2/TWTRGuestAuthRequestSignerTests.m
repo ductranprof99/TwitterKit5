@@ -37,7 +37,7 @@
 
     _guestSession = [[TWTRGuestSession alloc] initWithSessionDictionary:@{ TWTRAuthAppOAuthTokenKey: @"accessToken", TWTRGuestAuthOAuthTokenKey: @"guestToken" }];
 
-    NSURL *url = [NSURL URLWithString:@"https://api.twitter.com/1.1/endpoint"];
+    NSURL *url = [NSURL URLWithString:@"https://api.x.com/1.1/endpoint"];
     _request = [NSURLRequest requestWithURL:url];
     _signedRequest = [TWTRGuestAuthRequestSigner signedURLRequest:_request session:_guestSession];
 }

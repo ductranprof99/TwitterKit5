@@ -88,7 +88,7 @@ static NSString *const TWTRFakePhoneNumber = @"+15551234567";
 
     TWTROAuthSigning *OAuthEcho = [[TWTROAuthSigning alloc] initWithAuthConfig:_authConfig authSession:twitterSession];
 
-    NSString *URLString = @"https://api.twitter.com/1.1/some_api_method.json";
+    NSString *URLString = @"https://api.x.com/1.1/some_api_method.json";
 
     NSError *error = nil;
     NSDictionary *returnedAuthHeaders = [OAuthEcho OAuthEchoHeadersForRequestMethod:@"GET" URLString:URLString parameters:nil error:&error];
@@ -104,7 +104,7 @@ static NSString *const TWTRFakePhoneNumber = @"+15551234567";
 
     NSDictionary *returnedAuthHeaders = [OAuthEcho OAuthEchoHeadersToVerifyCredentials];
 
-    [self verifyReturnedHeaders:returnedAuthHeaders withError:nil expectedURLString:@"https://api.twitter.com/1.1/account/verify_credentials.json"];
+    [self verifyReturnedHeaders:returnedAuthHeaders withError:nil expectedURLString:@"https://api.x.com/1.1/account/verify_credentials.json"];
 }
 
 @end

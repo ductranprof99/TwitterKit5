@@ -135,7 +135,7 @@
                                                       password, @"x_auth_password",
                                                       @"client_auth", @"x_auth_mode",
                                                       nil]
-                                                host:@"api.twitter.com"
+                                                host:@"api.x.com"
                                          consumerKey:CONSUMER_KEY
                                       consumerSecret:CONSUMER_SECRET
                                          accessToken:nil
@@ -147,7 +147,7 @@
     NSURLRequest *echo = [GCOAuth URLRequestForPath:@"/1/account/verify_credentials.json"
                                       GETParameters:nil
                                              scheme:@"https"
-                                               host:@"api.twitter.com"
+                                               host:@"api.x.com"
                                         consumerKey:CONSUMER_KEY
                                      consumerSecret:CONSUMER_SECRET
                                         accessToken:accessToken

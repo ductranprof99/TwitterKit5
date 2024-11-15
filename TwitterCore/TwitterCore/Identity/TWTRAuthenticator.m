@@ -143,7 +143,7 @@
 static NSString *const TWTRAuthTypeKeyUser = @"user_auth";
 static NSString *const TWTRAuthTypeKeyApp = @"app_auth";
 static NSString *const TWTRAuthTypeKeyGuest = @"guest_auth";
-static NSString *const TWTRKeychainServiceString = @"api.twitter.com";
+static NSString *const TWTRKeychainServiceString = @"api.x.com";
 
 + (NSString *)authTypeStringForAuthType:(TWTRAuthType)authType
 {

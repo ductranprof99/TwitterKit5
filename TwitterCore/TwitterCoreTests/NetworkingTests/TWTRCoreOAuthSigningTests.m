@@ -95,10 +95,10 @@ static NSString *const TWTRFakeOAuthTokenSecret = @"com.TWTROAuthSigningTests.oa
     TWTRAuthConfig *authConfig = [[self class] authConfig];
     id<TWTRAuthSession> authSession = [[self class] authSession];
 
-    NSString *requestURLString = @"http://api.twitter.com/verify_credentials/";
+    NSString *requestURLString = @"http://api.x.com/verify_credentials/";
 
     NSError *error = nil;
-    NSDictionary *oauthHeaders = TWTRCoreOAuthSigningOAuthEchoHeaders(authConfig, authSession, @"GET", requestURLString, nil, @"api.twitter.com", &error);
+    NSDictionary *oauthHeaders = TWTRCoreOAuthSigningOAuthEchoHeaders(authConfig, authSession, @"GET", requestURLString, nil, @"api.x.com", &error);
 
     XCTAssertNotNil(oauthHeaders);
     XCTAssertTrue([oauthHeaders[TWTROAuthEchoRequestURLStringKey] length] > 0);

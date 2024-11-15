@@ -889,7 +889,7 @@
                     "id": "5a110d312052166f",
                     "name": "San Francisco",
                     "place_type": "city",
-                    "url": "https://api.twitter.com/1.1/geo/id/5a110d312052166f.json"
+                    "url": "https://api.x.com/1.1/geo/id/5a110d312052166f.json"
                 },
                 "possibly_sensitive": false,
                 "retweet_count": 58,

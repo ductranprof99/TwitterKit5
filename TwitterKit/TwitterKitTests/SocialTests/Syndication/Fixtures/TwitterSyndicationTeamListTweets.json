@@ -2271,7 +2271,7 @@
                     "id": "fbd6d2f5a4e4a15e",
                     "name": "California",
                     "place_type": "admin",
-                    "url": "https://api.twitter.com/1.1/geo/id/fbd6d2f5a4e4a15e.json"
+                    "url": "https://api.x.com/1.1/geo/id/fbd6d2f5a4e4a15e.json"
                 },
                 "possibly_sensitive": false,
                 "retweet_count": 219,
@@ -3098,7 +3098,7 @@
                 "id": "fbd6d2f5a4e4a15e",
                 "name": "California",
                 "place_type": "admin",
-                "url": "https://api.twitter.com/1.1/geo/id/fbd6d2f5a4e4a15e.json"
+                "url": "https://api.x.com/1.1/geo/id/fbd6d2f5a4e4a15e.json"
             },
             "possibly_sensitive": false,
             "retweet_count": 219,
@@ -3371,7 +3371,7 @@
             "id": "5ef5b7f391e30aff",
             "name": "Berkeley",
             "place_type": "city",
-            "url": "https://api.twitter.com/1.1/geo/id/5ef5b7f391e30aff.json"
+            "url": "https://api.x.com/1.1/geo/id/5ef5b7f391e30aff.json"
         },
         "possibly_sensitive": false,
         "retweet_count": 0,
@@ -4839,7 +4839,7 @@
                 "id": "90942366be65cd2c",
                 "name": "The Embarcadero",
                 "place_type": "neighborhood",
-                "url": "https://api.twitter.com/1.1/geo/id/90942366be65cd2c.json"
+                "url": "https://api.x.com/1.1/geo/id/90942366be65cd2c.json"
             },
             "retweet_count": 10,
             "retweeted": false,

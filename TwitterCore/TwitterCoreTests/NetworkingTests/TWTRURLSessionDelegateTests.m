@@ -43,7 +43,7 @@
 {
     [super setUp];
     self.URLSession = [NSURLSession sharedSession];
-    self.twitterHost = @"api.twitter.com";
+    self.twitterHost = @"api.x.com";
 
     self.task = [self taskWithHost:self.twitterHost];
 

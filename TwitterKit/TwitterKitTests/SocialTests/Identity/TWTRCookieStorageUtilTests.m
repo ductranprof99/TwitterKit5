@@ -33,7 +33,7 @@
 {
     [super setUp];
 
-    self.apiTwitterCookie = [NSHTTPCookie cookieWithProperties:@{ NSHTTPCookiePath: @"/", NSHTTPCookieName: @"name", NSHTTPCookieValue: @"value", NSHTTPCookieDomain: @"http://api.twitter.com" }];
+    self.apiTwitterCookie = [NSHTTPCookie cookieWithProperties:@{ NSHTTPCookiePath: @"/", NSHTTPCookieName: @"name", NSHTTPCookieValue: @"value", NSHTTPCookieDomain: @"http://api.x.com" }];
     self.twitterCookie = [NSHTTPCookie cookieWithProperties:@{ NSHTTPCookiePath: @"/", NSHTTPCookieName: @"name", NSHTTPCookieValue: @"value", NSHTTPCookieDomain: @".twitter.com" }];
     self.nonTwitterCookie = [NSHTTPCookie cookieWithProperties:@{ NSHTTPCookiePath: @"/", NSHTTPCookieName: @"name", NSHTTPCookieValue: @"value", NSHTTPCookieDomain: @".example.com" }];
     NSHTTPCookieStorage *cookieStorage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
@@ -63,7 +63,7 @@
 
 - (void)testCookiesWithDomainSuffix_exactMatch
 {
-    NSArray *cookies = [TWTRCookieStorageUtil cookiesWithDomainSuffix:@"api.twitter.com"];
+    NSArray *cookies = [TWTRCookieStorageUtil cookiesWithDomainSuffix:@"api.x.com"];
     XCTAssertEqual([cookies count], 1);
 }
 
@@ -76,8 +76,8 @@
 
 - (void)testClearCookiesWithDomainSuffix_exactMatch
 {
-    [TWTRCookieStorageUtil clearCookiesWithDomainSuffix:@"api.twitter.com"];
-    NSArray *cookies = [TWTRCookieStorageUtil cookiesWithDomainSuffix:@"api.twitter.com"];
+    [TWTRCookieStorageUtil clearCookiesWithDomainSuffix:@"api.x.com"];
+    NSArray *cookies = [TWTRCookieStorageUtil cookiesWithDomainSuffix:@"api.x.com"];
     XCTAssertEqual([cookies count], 0);
 }
 

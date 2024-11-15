@@ -192,7 +192,7 @@
 
 - (NSMutableURLRequest *)mutableTwitterRequest
 {
-    NSURL *url = [NSURL URLWithString:@"https://api.twitter.com/1.1/endpoint"];
+    NSURL *url = [NSURL URLWithString:@"https://api.x.com/1.1/endpoint"];
     NSMutableURLRequest *mutableRequest = [NSMutableURLRequest requestWithURL:url];
     [mutableRequest setValue:@"value" forHTTPHeaderField:@"X-Test-Header"];
     return mutableRequest;

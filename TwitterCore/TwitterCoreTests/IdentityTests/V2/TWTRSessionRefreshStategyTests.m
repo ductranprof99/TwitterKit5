@@ -46,7 +46,7 @@
     _serviceConfig = OCMProtocolMock(@protocol(TWTRAPIServiceConfig));
     _accessToken = @"accessToken";
     _guestRefreshStrategy = [[TWTRGuestSessionRefreshStrategy alloc] initWithAuthConfig:_authConfig APIServiceConfig:_serviceConfig];
-    _url = [NSURL URLWithString:@"http://api.twitter.com"];
+    _url = [NSURL URLWithString:@"http://api.x.com"];
     _guestSession = [[TWTRGuestSession alloc] initWithAccessToken:@"accessToken" guestToken:@"guestToken"];
 }
 

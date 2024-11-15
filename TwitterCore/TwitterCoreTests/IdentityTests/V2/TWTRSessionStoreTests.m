@@ -83,7 +83,7 @@
     _sessionStore = [self instantiateSessionStore];
     _noStrategyStore = [[TWTRSessionStore alloc] initWithAuthConfig:_authConfig APIServiceConfig:_serviceConfig refreshStrategies:@[] URLSession:[NSURLSession sharedSession]];
 
-    NSURL *url = [NSURL URLWithString:@"https://api.twitter.com"];
+    NSURL *url = [NSURL URLWithString:@"https://api.x.com"];
     _okResponse = [[NSHTTPURLResponse alloc] initWithURL:url statusCode:200 HTTPVersion:@"1.1" headerFields:@{}];
     _badAppTokenResponse = [[NSHTTPURLResponse alloc] initWithURL:url statusCode:89 HTTPVersion:@"1.1" headerFields:@{}];
     _badGuestTokenResponse = [[NSHTTPURLResponse alloc] initWithURL:url statusCode:239 HTTPVersion:@"1.1" headerFields:@{}];

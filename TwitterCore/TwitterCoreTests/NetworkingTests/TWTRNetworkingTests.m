@@ -91,8 +91,8 @@
 
 - (void)testTwitterGETRequest
 {
-    NSURLRequest *getReq = [self.userNetworking URLRequestWithMethod:@"GET" URLString:@"https://api.twitter.com" parameters:@{@"2": @"4 5"}];
-    NSString *resultURL = @"https://api.twitter.com?2=4%205";
+    NSURLRequest *getReq = [self.userNetworking URLRequestWithMethod:@"GET" URLString:@"https://api.x.com" parameters:@{@"2": @"4 5"}];
+    NSString *resultURL = @"https://api.x.com?2=4%205";
     XCTAssert(getReq != nil, @"");
     XCTAssert([resultURL isEqualToString:[[getReq URL] absoluteString]], @"");
     NSDictionary *headers = [getReq allHTTPHeaderFields];
